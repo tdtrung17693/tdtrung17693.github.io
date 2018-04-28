@@ -3,7 +3,9 @@ published: false
 ---
 ---
 layout: post
-title: Learning ESP32 - Interrupt
+title: "ESP32 FreeRTOS - Interrupt"
+date:   2018-04-28 15:35:30 +0700
+categories: esp32 freertos
 ---
 
 ```c
@@ -81,4 +83,3 @@ void app_main(void) {
 }
 
 ```
-
