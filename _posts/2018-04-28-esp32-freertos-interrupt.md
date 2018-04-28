@@ -1,7 +1,4 @@
 ---
-published: false
----
----
 layout: post
 title: "ESP32 FreeRTOS - Interrupt"
 date:   2018-04-28 15:35:30 +0700
