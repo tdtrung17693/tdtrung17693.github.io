@@ -9,6 +9,7 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 3.7.3"
+gem 'jekyll-compose', group: [:jekyll_plugins]
 gem "tale"
 gem "jekyll-remote-theme"
 gem "jekyll-paginate"
