@@ -211,14 +211,18 @@
     }
 }
 
-.post-meta {
+.post-item__meta {
     font-size: $small-font-size;
     color: $grey-color;
 }
 
-.post-link {
+.post-item__title {
+    font-family: "VT323";
+}
+
+.post-item__link {
     display: block;
-    @include relative-font-size(1.5);
+    @include relative-font-size(1.8);
 }
 
 /**
