@@ -26,10 +26,11 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
-
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-remote-theme
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -52,6 +53,3 @@ remote_theme: chesterhow/tale
 
 permalink:  /:year-:month-:day/:title
 paginate:   5
-plugins:
-  - jekyll-paginate
-  - jekyll-remote-theme
