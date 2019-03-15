@@ -218,11 +218,13 @@
 
 .post-item__title {
     font-family: "VT323";
+    margin-bottom: -6px;
 }
 
 .post-item__link {
     display: block;
     @include relative-font-size(1.8);
+    color: #484848 !important;
 }
 
 /**
