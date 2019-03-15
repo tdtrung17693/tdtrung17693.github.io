@@ -16,13 +16,18 @@
     font-weight: 300;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
-    color: #1b1b1b;
     text-shadow: 3px 3px 0 #dad3d3;
     font-family: "Press Start 2P";
+    text-decoration: none;
 
     @include media-query($on-palm) {
         padding-right: 45px;
+    }
+
+    &,
+    &:visited,
+    &:hover {
+        color: #1b1b1b;
     }
 }
 
