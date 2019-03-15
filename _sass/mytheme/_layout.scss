@@ -18,7 +18,6 @@
     margin-bottom: 0;
     text-shadow: 3px 3px 0 #dad3d3;
     font-family: "Press Start 2P";
-    text-decoration: none;
 
     @include media-query($on-palm) {
         padding-right: 45px;
@@ -28,6 +27,7 @@
     &:visited,
     &:hover {
         color: #1b1b1b;
+        text-decoration: none;
     }
 }
 
