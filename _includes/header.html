@@ -1,10 +1,21 @@
 <header class="site-header">
-
-  <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
-  </div>
+    <div class="wrapper">
+        {%- assign default_paths = site.pages | map: "path" -%}
+        {%- assign page_paths = site.header_pages | default: default_paths -%}
+        {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+        <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+        <nav class="flex items-center justify-between flex-wrap m-10">
+            <div class="w-full block flex-grow justify-center lg:flex lg:items-center lg:w-auto">
+                <a href="#responsive-header" class="block mt-4 text-gray-700 lg:mt-0 hover:text-black mr-8">
+                    Docs
+                </a>
+                {%- for page in site.site_pages -%}
+                <a href="{{ page.url | relative_url }}" class="block mt-4 text-gray-700 lg:mt-0 hover:text-black mr-8">
+                    {{ page.title }}
+                </a>
+                {%- endfor -%}
+                <a href="{{ "/feed.xml" | relative_url }}" class="block mt-4 text-gray-700 lg:mt-0 hover:text-black">Feed</a>
+            </div>
+        </nav>
+    </div>
 </header>

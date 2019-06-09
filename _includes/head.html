@@ -7,9 +7,12 @@
         href="https://fonts.googleapis.com/css?family=Press+Start+2P|IBM+Plex+Mono|VT323&amp;subset=vietnamese"
         rel="stylesheet"
     />
-    <link rel="stylesheet" href="{{
-        "/assets/css/style.css" | relative_url
-    }}"> {%- feed_meta -%} {%- if jekyll.environment == 'production' and
+    <link
+        href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    {%- feed_meta -%} {%- if jekyll.environment == 'production' and
     site.google_analytics -%} {%- include google-analytics.html -%} {%- endif
     -%}
 </head>

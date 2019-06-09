@@ -23,7 +23,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-
 # Build settings
 markdown: kramdown
 plugins:
@@ -51,3 +50,7 @@ github_username: tdtrung17693
 permalink:  /:year-:month-:day/:title
 paginate:   5
 excerpt_separator: <!--more-->
+collections:
+  site_pages:
+    output: true
+    permalink: /:name
