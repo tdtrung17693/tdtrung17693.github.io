@@ -45,7 +45,6 @@ plugins:
 title: DTs Blog
 email: trandinhtrung176@gmail.com
 description: A description of your website that will be used in search engine results and the site’s RSS feed.
-url: "localhost:4000"
 github_username: tdtrung17693
 
 permalink:  /:year-:month-:day/:title

@@ -11,7 +11,7 @@ layout: default
     <h1 class="post-item__title p-name" itemprop="name headline">
       {{ page.title | escape }}
     </h1>
-    <p class="post-item__meta">
+    <div class="post-item__meta">
       <time
         class="dt-published item-meta__date"
         datetime="{{ page.date | date_to_xmlschema }}"
@@ -19,7 +19,19 @@ layout: default
       >
         {{ page.date | date: "%b %-d, %Y" }}
       </time>
-    </p>
+      <ul class="item-meta__tags inline-flex m-0">
+        {%- for tag in page.tags -%}
+        <li class="item-meta__tag">
+          <a
+            class="mr-4 bg-purple-500 hover:bg-purple-600 rounded-sm text-purple-100 hover:text-white"
+            href="/tags/{{ tag }}"
+          >
+            {{ tag | escape }}
+          </a>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
   </header>
 
   <div class="post-item__content e-content" itemprop="articleBody">
@@ -31,22 +43,3 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
-<a
-  class="back-to-home text-gray-500 visited:text-gray-500 hover:text-gray-800"
-  href="/"
->
-  <svg
-    id="i-chevron-left"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 32 32"
-    width="32"
-    height="32"
-    fill="none"
-    stroke="currentcolor"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    stroke-width="2"
-  >
-    <path d="M20 30 L8 16 20 2" />
-  </svg>
-</a>

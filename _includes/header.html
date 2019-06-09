@@ -17,7 +17,10 @@
                     {{ page.title }}
                 </a>
                 {%- endfor -%}
-                <a href="{{ "/feed.xml" | relative_url }}" class="block mt-4 text-gray-700 lg:mt-0 hover:text-black">Feed</a>
+                <a href="{{ "/feed.xml" | relative_url }}" class="block mt-4 text-gray-700 lg:mt-0 hover:text-black mr-8">Feed</a>
+                {% if site.github_username %}
+                <a href="https://github.com/{{ site.github_username }}" class="block mt-4 text-gray-700 lg:mt-0 hover:text-black">GitHub</a>
+                {% endif %}
             </div>
         </nav>
     </div>
