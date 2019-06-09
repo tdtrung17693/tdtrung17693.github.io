@@ -22,7 +22,7 @@ layout: default
         <span class="item-meta__date">{{ post.date | date: date_format }}</span>
         <ul class="item-meta__tags inline-flex m-0">
           {%- for tag in post.tags -%}
-            <li class="item-meta__tag mr-4 bg-purple-500 rounded-sm text-purple-100 ">{{ tag }}</li>
+            <li class="item-meta__tag"><a class="mr-4 bg-purple-500 hover:bg-purple-600 rounded-sm text-purple-100 hover:text-white" href="/tags/{{ tag }}">{{ tag }}</a></li>
           {%- endfor -%}
         </li>
       </div>

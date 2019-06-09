@@ -10,6 +10,18 @@
     text-align: center;
 }
 
+#avatar {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #e7ac7a;
+
+    img {
+        margin-top: 8px;
+    }
+}
+
 .site-title {
     @include relative-font-size(1.625);
     display: inline-block;
@@ -224,12 +236,19 @@
 }
 
 .item-meta__tag {
-    padding: 0.1rem 0.5rem;
+    > a {
+        padding: 0.1rem 0.5rem;
+    }
+}
+
+.item-meta__date {
+    font-family: "IBM Plex Mono";
+    margin-right: 1em;
 }
 
 .post-item__title {
-    font-family: "VT323";
-    margin-bottom: -6px;
+    font-family: $title-font-family;
+    margin-bottom: 0;
 }
 
 .post-item__link {
@@ -245,18 +264,28 @@
     margin-bottom: $spacing-unit;
 }
 
-.post-title,
-.post-content h1 {
-    @include relative-font-size(2.625);
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @media screen and (min-width: $on-large) {
+.post-item--active {
+    .post-item__title,
+    .post-item__content h1 {
         @include relative-font-size(2.625);
+        letter-spacing: -1px;
+        line-height: 1;
+
+        @media screen and (min-width: $on-large) {
+            @include relative-font-size(2.625);
+        }
+    }
+
+    .post-item__title {
+        margin-bottom: 0.2em;
+    }
+
+    .item-meta__date {
+        margin-right: 0;
     }
 }
 
-.post-content {
+.post-item__content {
     margin-bottom: $spacing-unit;
 
     h2 {
@@ -313,4 +342,18 @@
 .one-half {
     width: -webkit-calc(50% - (#{$spacing-unit} / 2));
     width: calc(50% - (#{$spacing-unit} / 2));
+}
+
+.back-to-home {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+
+    &:visited {
+        color: #a0aec0;
+    }
+
+    &:hover {
+        color: #000;
+    }
 }
