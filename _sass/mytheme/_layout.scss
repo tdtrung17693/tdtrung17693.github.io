@@ -10,6 +10,11 @@
     text-align: center;
 }
 
+.navbar__link {
+    font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+    @include relative-font-size(1.125);
+}
+
 #avatar {
     width: 10rem;
     height: 10rem;
@@ -33,10 +38,6 @@
         -6px 0px 0 #7702f8, -6px 1px 0 #7702f8, -1px 4px 0 #7702f8;
     font-family: "Press Start 2P";
     transition: transform 0.5s;
-
-    @include media-query($on-palm) {
-        padding-right: 45px;
-    }
 
     &:hover {
         transform: scale(1.1);

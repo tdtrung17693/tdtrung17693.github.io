@@ -7,19 +7,16 @@
 
         <figure id="avatar" class="m-10"><img src="{{ site.avatar }}" alt="user avatar"></figure>
 
-        <nav class="flex items-center justify-between flex-wrap mb-10">
-            <div class="w-full block flex-grow justify-center lg:flex lg:items-center lg:w-auto">
-                <a href="#responsive-header" class="block mt-4 text-gray-700 lg:mt-0 hover:text-black mr-8">
-                    Docs
-                </a>
+        <nav class="navbar flex items-center justify-between flex-wrap mb-10">
+            <div class="w-full block flex-grow justify-center md:flex md:items-center md:w-auto">
                 {%- for page in site.site_pages -%}
-                <a href="{{ page.url | relative_url }}" class="block mt-4 text-gray-700 lg:mt-0 hover:text-black mr-8">
+                <a href="{{ page.url | relative_url }}" class="navbar__link block mt-4 text-gray-700 md:mt-0 hover:text-black md:mr-8">
                     {{ page.title }}
                 </a>
                 {%- endfor -%}
-                <a href="{{ "/feed.xml" | relative_url }}" class="block mt-4 text-gray-700 lg:mt-0 hover:text-black mr-8">Feed</a>
+                <a href="{{ "/feed.xml" | relative_url }}" class="navbar__link block mt-4 text-gray-700 md:mt-0 hover:text-black md:mr-8">Feed</a>
                 {% if site.github_username %}
-                <a href="https://github.com/{{ site.github_username }}" class="block mt-4 text-gray-700 lg:mt-0 hover:text-black">GitHub</a>
+                <a href="https://github.com/{{ site.github_username }}" class="navbar__link block mt-4 text-gray-700 md:mt-0 hover:text-black">GitHub</a>
                 {% endif %}
             </div>
         </nav>
