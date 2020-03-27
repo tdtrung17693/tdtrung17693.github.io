@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 tags: latex
 ---
 ## Enable `shell-escape` right in latex file
