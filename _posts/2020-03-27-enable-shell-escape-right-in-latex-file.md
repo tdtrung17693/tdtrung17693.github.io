@@ -6,5 +6,5 @@ tags: latex
 
 Using comment:
 ```latex
- %!TEX option = --shell-escape
+ %!TEX options=-shell-escape
 ```
