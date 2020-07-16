@@ -46,6 +46,7 @@ title: DTs Blog
 email: trandinhtrung176@gmail.com
 description: A description of your website that will be used in search engine results and the site’s RSS feed.
 github_username: tdtrung17693
+google_analytics: UA-64069116-1
 
 permalink:  /:year-:month-:day/:title
 paginate:   5
