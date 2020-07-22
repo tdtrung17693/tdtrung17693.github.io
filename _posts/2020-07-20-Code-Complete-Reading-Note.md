@@ -10,3 +10,5 @@ published: false
     3) Division into Classes
     4) Division into Routines
     5) Internal Routine Design
+- Good abstractions make reasoning about the system easier.
+- Consider what needs to be hidden when designing at all level.
