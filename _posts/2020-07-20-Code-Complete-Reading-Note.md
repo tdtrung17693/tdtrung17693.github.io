@@ -12,3 +12,4 @@ published: false
     5) Internal Routine Design
 - Good abstractions make reasoning about the system easier.
 - Consider what needs to be hidden when designing at all level.
+- Using heuristic for design (p.108)
